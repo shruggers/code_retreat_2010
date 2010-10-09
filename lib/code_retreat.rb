@@ -6,14 +6,7 @@ class GameOfLife
   end
   
   def tick
-    results = Set.new
-    @cells.each do |cell|
-      neighbours = count_alive_neighbours(cell)
-      case neighbours
-        when (2..3) then results << cell
-      end
-    end
-    results.to_a
+    []
   end
   
   def count_alive_neighbours(cell)
