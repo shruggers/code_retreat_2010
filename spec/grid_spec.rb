@@ -41,7 +41,7 @@ describe Grid do
       ]
     }
     (0..2).each do |row|
-      (0..2).wach do |column|
+      (0..2).each do |column|
         it "should get the cell at the relevant coordinate for #{row} and #{column}" do
           grid = Grid.new(cells)
           grid.get(row,column).should == cells[row][column]
