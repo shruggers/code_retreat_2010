@@ -10,4 +10,13 @@ describe GameOfLife do
     end
   end
   
+  
+  describe "count_alive_neighbours" do
+    it "should return 0 for a solitary cell" do
+      cell = Cell.new(0,0)
+      game = GameOfLife.new(cell)
+      game.count_alive_neighbours(cell)
+    end
+  end
+  
 end
