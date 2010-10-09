@@ -11,6 +11,10 @@ describe Cell do
       end
     end
     context "when passed a false" do
+      it "should be alive" do
+        cell = Cell.new(false)
+        cell.alive?.should be_false
+      end
     end
   end
   
