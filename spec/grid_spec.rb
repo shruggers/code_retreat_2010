@@ -27,7 +27,7 @@ describe Grid do
       }
       it "should have no live neighbours for the centre cell" do
         grid = Grid.new(cells)
-        grid.live_neighbours_for(1,1).should == 0
+        grid.live_neighbours_for(1,1).should == 8
       end
     end    
   end
