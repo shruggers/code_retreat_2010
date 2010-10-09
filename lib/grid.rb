@@ -5,7 +5,14 @@ class Grid
   end
   
   def live_neighbours_for(x, y)
-    0
+    count = 0
+    (-1..1).each do |column|
+      (-1..1).each do |row|
+        unless row == 0 && column == 0 
+          count +=1
+        end
+      end
+    end
   end
   
 end
