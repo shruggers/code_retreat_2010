@@ -16,6 +16,7 @@ class Grid
         end
       end
     end
+    count
   end
   
   
