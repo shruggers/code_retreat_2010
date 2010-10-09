@@ -17,7 +17,7 @@ class Grid
   end
   
   def get(x, y)
-    @cells[x,y]
+    @cells[x][y]
   end
   
 end
