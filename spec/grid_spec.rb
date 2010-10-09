@@ -32,6 +32,24 @@ describe Grid do
     end    
   end
   
+  describe "get" do
+    let(:cells){
+      [
+        [Cell.new(true),Cell.new(true),Cell.new(true)],
+        [Cell.new(true),Cell.new(false),Cell.new(true)],
+        [Cell.new(true),Cell.new(true),Cell.new(true)]
+      ]
+    }
+    (0..2) do |row|
+      (0..2) do |column|
+        it "should get the cell at the relevant coordinate for #{row} and #{column}" do
+          grid = Grid.new(cells)
+          grid.get(row,column).should == cells[row][column]
+        end
+      end
+    end
+  end
+  
   
   
 end
