@@ -8,6 +8,10 @@ class GameOfLife
     []
   end
   
+  def count_alive_neighbours(cell)
+    0
+  end
+  
 end
 
 class Cell < Struct.new(:x, :y)
