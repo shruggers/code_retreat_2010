@@ -1,3 +1,4 @@
+require 'set'
 class GameOfLife
   
   def initialize(cells)
@@ -5,7 +6,8 @@ class GameOfLife
   end
   
   def tick
-    []
+    results = Set.new
+    @cells.each
   end
   
   def count_alive_neighbours(cell)
