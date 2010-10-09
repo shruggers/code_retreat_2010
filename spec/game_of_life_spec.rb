@@ -15,12 +15,12 @@ describe GameOfLife do
       it "should leave them all as dead" do
         game = GameOfLife.new(cells)
         game.tick
-        game.grid.should == [ [false,false,false],
-                              [false,false,false],
-                              [false,false,false]]
+        game.grid.should == [[false]]
       end
       
     end
+    
+    context ""
     
     
   end
