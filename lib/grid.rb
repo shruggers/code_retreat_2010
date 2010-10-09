@@ -5,6 +5,7 @@ class Grid
   end
   
   def live_neighbours_for(x, y)
+    0
   end
   
 end
