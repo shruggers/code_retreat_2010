@@ -5,3 +5,6 @@ class GameOfLife
   end
   
 end
+
+class Cell < Struct.new(:x, :y)
+end
