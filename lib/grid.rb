@@ -16,4 +16,8 @@ class Grid
     count
   end
   
+  def get(x, y)
+    @cells[x,y]
+  end
+  
 end
