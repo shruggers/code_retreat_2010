@@ -40,8 +40,8 @@ describe Grid do
         [Cell.new(true),Cell.new(true),Cell.new(true)]
       ]
     }
-    (0..2) do |row|
-      (0..2) do |column|
+    (0..2).each do |row|
+      (0..2).wach do |column|
         it "should get the cell at the relevant coordinate for #{row} and #{column}" do
           grid = Grid.new(cells)
           grid.get(row,column).should == cells[row][column]
