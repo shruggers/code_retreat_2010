@@ -15,7 +15,7 @@ describe GameOfLife do
     it "should return 0 for a solitary cell" do
       cell = Cell.new(0,0)
       game = GameOfLife.new(cell)
-      game.count_alive_neighbours(cell)
+      game.count_alive_neighbours(cell).should == 0
     end
   end
   
