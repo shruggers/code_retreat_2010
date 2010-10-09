@@ -14,6 +14,11 @@ describe Cell do
         Cell.new(false).should_not be_alive
       end
     end
+    context "where not passed anything" do
+      it "should return false" do
+        Cell.new.should_not be_alive
+      end
+    end
   end
   
 end
