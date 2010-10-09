@@ -4,6 +4,7 @@ class GameOfLife
   end
   
   def grid
+    [[false]]
   end
   
 end
