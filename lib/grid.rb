@@ -12,7 +12,7 @@ class Grid
     (-1..1).each do |row|
       (-1..1).each do |column|
         unless row == 0 && column == 0
-          count += if get(x + row, y + row).alive?
+          count += 1 if get(x + row, y + row).alive?
         end
       end
     end
