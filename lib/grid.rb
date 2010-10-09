@@ -4,7 +4,7 @@ class Grid
   end
   
   def get(x,y)
-    @cells[x][y]
+    Cell.new(@cells[x][y])
   end
   
   
