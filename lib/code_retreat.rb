@@ -28,6 +28,19 @@ class GameOfLife
     count
   end
   
+  def dead_neighbours(cell)
+    results = []
+    (-1..1).each do |row|
+      (-1..1).each do |column|
+        unless row == 0 && column == 0
+          new_cell = Cell.new(cell.x + row, cell.y + column)
+          results << new_cell if !@cells.include?(new_cell)
+        end
+      end
+    end
+    results
+  end
+  
 end
 
 class Cell < Struct.new(:x, :y)
