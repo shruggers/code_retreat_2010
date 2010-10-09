@@ -9,7 +9,15 @@ class GameOfLife
   end
   
   def count_alive_neighbours(cell)
-    0
+    count = 0
+    (-1..1).each do |row|
+      (-1..1).each do |column|
+        unless row == 0 && column == 0
+          count += 1 if @cells.include?(Cell.new(cell.x + row, cell.y + column))
+        end
+      end
+    end
+    count
   end
   
 end
