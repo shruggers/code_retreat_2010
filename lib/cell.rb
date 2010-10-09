@@ -1,6 +1,10 @@
 class Cell
-  def initialize(args)
-    
+  def initialize(state)
+    @state = state
+  end
+  
+  def alive?
+    @state
   end
   
   
