@@ -3,5 +3,11 @@ class GameOfLife
     @cells = cells
   end
   
+  def tick
+  end
+  
+  def grid
+  end
+  
   
 end
