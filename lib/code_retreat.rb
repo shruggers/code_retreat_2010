@@ -13,7 +13,7 @@ class GameOfLife
         when (2..3) then results << cell
       end
     end
-    results
+    results.to_a
   end
   
   def count_alive_neighbours(cell)
