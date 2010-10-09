@@ -1,5 +1,5 @@
 class Cell
-  def initialize(state = false)
+  def initialize(neighbours, state = false)
     @state = state
   end
   
