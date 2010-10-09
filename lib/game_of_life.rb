@@ -7,6 +7,7 @@ class GameOfLife
   end
   
   def grid
+    @cells
   end
   
   
