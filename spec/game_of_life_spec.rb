@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'code_retreat'
+require 'game_of_life'
 
 describe GameOfLife do
   
