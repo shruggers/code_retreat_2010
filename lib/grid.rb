@@ -1,6 +1,7 @@
 class Grid
   def initialize(cells)
     @cells = cells
+    @cell_objects = [[]]
   end
   
   def get(x,y)
