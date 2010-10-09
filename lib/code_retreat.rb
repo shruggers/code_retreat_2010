@@ -4,6 +4,10 @@ class GameOfLife
     @cells = cells
   end
   
+  def tick
+    []
+  end
+  
 end
 
 class Cell < Struct.new(:x, :y)
