@@ -10,7 +10,7 @@ class GameOfLife
     @cells.each do |cell|
       neighbours = count_alive_neighbours(cell)
       case neighbours
-        when (2..3) results << cell
+        when (2..3) then results << cell
       end
     end
     results
