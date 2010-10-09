@@ -10,6 +10,12 @@ describe GameOfLife do
     end
   end
   
+  context "where we have some active cells" do
+    it "should kill any cell with more than three neighbours" do
+      [Cell.new(0,0), Cell.new(0,1), Cell.new(1,1), Cell.new(1,0)]
+    end
+  end
+  
   
   describe "count_alive_neighbours" do
     it "should return 0 for a solitary cell" do
