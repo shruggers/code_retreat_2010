@@ -22,4 +22,15 @@ describe GameOfLife do
     end
   end
   
+  context "a 2x2 grid" do
+    context "where three cells are live" do
+      let(:grid){[[true, false],[true, true]]}
+      it "should spawn the remaining dead cell" do
+        game = GameOfLife.new(grid)
+        game.tick
+        game.grid.should == [[true, true],[true, true]]
+      end
+    end
+  end
+  
 end
