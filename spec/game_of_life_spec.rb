@@ -5,7 +5,7 @@ describe GameOfLife do
   
   context  "with a 3x3 grid" do
     
-    context "where they are all dead" do
+    context "where one is dead" do
       let(:cells){
         [[false]]
       }
