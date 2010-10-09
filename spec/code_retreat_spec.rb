@@ -21,7 +21,15 @@ describe GameOfLife do
       let(:cells){[Cell.new(0,0), Cell.new(0,1), Cell.new(1,1)]}
       it "should have 3 alive neighbours for 1,0" do
         game = GameOfLife.new(cells)
-        game.count_alive_neighbours(cell).should == 3
+        game.count_alive_neighbours(Cell.new(1,0)).should == 3
+      end
+      it "should have 2 alive neighbours for 0,1" do
+        game = GameOfLife.new(cells)
+        game.count_alive_neighbours(Cell.new(0,1)).should == 2
+      end
+      it "should have 2 alive neighbours for 1,1" do
+        game = GameOfLife.new(cells)
+        game.count_alive_neighbours(Cell.new(1,1)).should == 2
       end
     end
   end
