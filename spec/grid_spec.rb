@@ -21,4 +21,18 @@ describe Grid do
     
   end
   
+  describe "alive_neighbours_for" do
+    let(:cells){
+      [[true, false, true],
+      [true, false, true],
+      [false, false, false]]
+    }
+    
+    it "should have 4 alive neighbours for (1,1)" do
+      grid = Grid.new(cells)
+      grid.alive_neighbours_for(1, 1).should == 4
+    end
+    
+  end
+  
 end
