@@ -7,17 +7,13 @@ describe GameOfLife do
     
     context "where they are all dead" do
       let(:cells){
-        [[false,false,false],
-        [false,false,false],
-        [false,false,false]]
+        [[false]]
       }
-      
       it "should leave them all as dead" do
         game = GameOfLife.new(cells)
         game.tick
         game.grid.should == [[false]]
       end
-      
     end
     
     context ""
