@@ -17,7 +17,7 @@ describe GameOfLife do
     end
     it "should oscillate a line" do
       game = GameOfLife.new([Cell.new(0,0), Cell.new(1,0), Cell.new(2,0)])
-      game.tick.should == [Cell.new(0,0), Cell.new(0,-1), Cell.new(0,1)]
+      game.tick.should =~ [Cell.new(0,0), Cell.new(0,-1), Cell.new(0,1)]
     end
   end
   
