@@ -21,7 +21,7 @@ describe GameOfLife do
     end
     it "should leave a boat as a boat" do
       cells = [Cell.new(0,0), Cell.new(1,0),Cell.new(0,1), Cell.new(2,1), Cell.new(1,2)]
-      game = GameOfLife.enew(cells)
+      game = GameOfLife.new(cells)
       game.tick.should =~ [Cell.new(0,0), Cell.new(1,0),Cell.new(0,1), Cell.new(2,1), Cell.new(1,2)]
     end
   end
