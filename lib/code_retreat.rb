@@ -12,6 +12,9 @@ class GameOfLife
       case neighbours
         when (2..3) then results << cell
       end
+      dead_neighbours(cell).each do |dead|
+        results << dead if count_alive_neighbours(dead) == 3
+      end
     end
     results
   end
