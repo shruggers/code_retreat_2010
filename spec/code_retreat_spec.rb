@@ -15,6 +15,10 @@ describe GameOfLife do
       game = GameOfLife.new([Cell.new(0,0), Cell.new(0,1), Cell.new(1,1), Cell.new(1,0)])
       game.tick.should == []
     end
+    it "should live on any cell with two or three live neighbours" do
+      game = GameOfLife.new([Cell.new(0,0), Cell.new(1,0)])
+      game.tick.should == [Cell.new(0,0), Cell.new(1,0)]
+    end
   end
   
   
