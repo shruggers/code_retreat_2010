@@ -4,4 +4,8 @@ class Cell
     @state = state
   end
   
+  def alive?
+    @state
+  end
+  
 end
