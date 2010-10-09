@@ -1,7 +1,7 @@
 class Grid
   
   def initialize(cells)
-    @cell = cells
+    @cells = cells
   end
   
   def live_neighbours_for(x, y)
