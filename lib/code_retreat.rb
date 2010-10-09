@@ -1,6 +1,6 @@
 class GameOfLife
   
-  def initialize(*cells)
+  def initialize(cells)
     @cells = cells
   end
   
