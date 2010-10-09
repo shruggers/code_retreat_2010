@@ -29,7 +29,17 @@ describe Grid do
         grid = Grid.new(cells)
         grid.live_neighbours_for(1,1).should == 8
       end
-    end    
+    end
+    context "a 4x4 grid" do
+      let(:cells){
+        [
+          [Cell.new(true),Cell.new(true),Cell.new(true),Cell.new(true)],
+          [Cell.new(true),Cell.new(true),Cell.new(true),Cell.new(true)],
+          [Cell.new(true),Cell.new(true),Cell.new(true),Cell.new(true)],
+          [Cell.new(true),Cell.new(true),Cell.new(true),Cell.new(true)]
+        ]
+      }
+    end
   end
   
   describe "get" do
